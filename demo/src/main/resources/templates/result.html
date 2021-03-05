@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'Name: ' + ${formular.id}" />
+<p th:text="'Message: ' + ${formular.content}" />
+<p th:text="'Odeslal jste: ' + ${counter} + 'zpráv'" />
+<p th:text="'Celkový počet odeslaných zpráv:' + ${webTraffic}"/>
+<a href="/formular">Odeslat další zprávu</a>
+</body>
+</html>
